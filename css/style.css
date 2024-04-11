@@ -1,0 +1,168 @@
+body {
+  text-align: center;
+  color: whitesmoke;
+  background-color: #13293D;
+}
+
+.header {
+  background-color: #13293D;
+  height: 100vh;
+}
+
+.header__wrapper {
+  display: grid;
+  grid-template-columns: 10% 1fr 10%;
+  grid-template-rows: 1fr 1fr 1fr;
+  height: 100vh;
+}
+
+.header__menu {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  display: flex;
+  justify-content: right;
+}
+@media screen and (min-width: 600px) {
+  .header__menu {
+    grid-column: 1/-1;
+    grid-row: 1/2;
+    display: block;
+  }
+}
+
+.header__menu-bars {
+  margin-top: 40px;
+}
+
+.bar {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 35px;
+  height: 5px;
+  background-color: whitesmoke;
+  border-radius: 10%;
+}
+@media screen and (min-width: 600px) {
+  .bar {
+    display: none;
+  }
+}
+
+.bar:nth-child(2) {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.bar.one {
+  margin-top: -5px;
+  transform: rotate(45deg);
+  transition: transform 0.4s ease-in-out;
+}
+
+.bar.two {
+  display: none;
+}
+
+.bar.three {
+  margin-top: -5px;
+  transform: rotate(-45deg);
+  transition: transform 0.4s ease-in-out;
+}
+
+.header__menu-list {
+  display: none;
+}
+@media screen and (min-width: 600px) {
+  .header__menu-list {
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 0;
+    max-width: 1200px;
+  }
+}
+
+.menu__link {
+  text-decoration: none;
+  color: whitesmoke;
+  border-bottom: 2px solid #F0F465;
+}
+
+.menu__item {
+  list-style: none;
+}
+
+@media screen and (min-width: 600px) {
+  .header__socials {
+    grid-column: 3/4;
+    grid-row: 3/4;
+  }
+}
+
+.header__heading {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  display: flex;
+  justify-content: center;
+  font-family: "Indie Flower", cursive;
+  font-weight: 400;
+  font-size: 3rem;
+  font-style: normal;
+}
+
+.header__img img {
+  position: absolute;
+  width: 30%;
+}
+
+.header__img-1 {
+  top: 10%;
+  left: 60%;
+  -webkit-animation-name: inkdrops;
+          animation-name: inkdrops;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+}
+
+.header__img-2 {
+  right: 60%;
+  top: 60%;
+  -webkit-animation-name: inkdrops;
+          animation-name: inkdrops;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+@-webkit-keyframes inkdrops {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes inkdrops {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.header__arrow {
+  grid-column: 2/3;
+  grid-row: 3/4;
+  justify-self: center;
+  align-self: flex-end;
+  width: 40px;
+  margin-bottom: 10px;
+}/*# sourceMappingURL=style.css.map */

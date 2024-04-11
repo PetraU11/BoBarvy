@@ -109,12 +109,19 @@ body {
 
 .header__socials{
     @include tablet {
-        grid-column: 3/4;
+        grid-column: 2/3;
         grid-row: 3/4;
+        justify-self: right;
+        align-self: flex-end;
+      
     }
-
 }
-     
+
+.header__socials-insta {
+    @include tablet{ 
+    margin-left:10px;
+    margin-right:10px;}
+}
       
 
 

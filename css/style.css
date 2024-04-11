@@ -95,8 +95,17 @@ body {
 
 @media screen and (min-width: 600px) {
   .header__socials {
-    grid-column: 3/4;
+    grid-column: 2/3;
     grid-row: 3/4;
+    justify-self: right;
+    align-self: flex-end;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .header__socials-insta {
+    margin-left: 10px;
+    margin-right: 10px;
   }
 }
 

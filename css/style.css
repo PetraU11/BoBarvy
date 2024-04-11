@@ -108,6 +108,8 @@ body {
   font-weight: 400;
   font-size: 3rem;
   font-style: normal;
+  position: relative;
+  z-index: 1000;
 }
 
 .header__img img {
@@ -164,5 +166,5 @@ body {
   justify-self: center;
   align-self: flex-end;
   width: 40px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }/*# sourceMappingURL=style.css.map */

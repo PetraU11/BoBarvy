@@ -85,7 +85,8 @@ body {
 .menu__link {
   text-decoration: none;
   color: whitesmoke;
-  border-bottom: 2px solid #F0F465;
+  border-bottom: 5px solid #F0F465;
+  font-weight: bold;
 }
 
 .menu__item {
@@ -103,13 +104,29 @@ body {
   grid-column: 2/3;
   grid-row: 2/3;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  font-family: "Indie Flower", cursive;
-  font-weight: 400;
-  font-size: 3rem;
+  align-items: center;
+  font-family: "Kanit", sans-serif;
+  font-weight: 500;
   font-style: normal;
   position: relative;
+  font-size: 1.5rem;
   z-index: 1000;
+}
+@media screen and (min-width: 1000px) {
+  .header__heading {
+    font-size: 2rem;
+  }
+}
+
+.header__heading-h1-subheading {
+  font-weight: 300;
+  font-style: italic;
+}
+
+.header__heading-arrow {
+  width: 40px;
 }
 
 .header__img img {
@@ -159,12 +176,4 @@ body {
   100% {
     opacity: 1;
   }
-}
-.header__arrow {
-  grid-column: 2/3;
-  grid-row: 3/4;
-  justify-self: center;
-  align-self: flex-end;
-  width: 40px;
-  margin-bottom: 20px;
 }/*# sourceMappingURL=style.css.map */

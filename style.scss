@@ -116,7 +116,6 @@ body {
       
     }
 }
-
 .header__socials-insta {
     @include tablet{ 
     margin-left:10px;
@@ -167,13 +166,43 @@ body {
 }
 
 .header__img-2{
-    right: 60%;
+    right: 50%;
     top: 60%;
     animation-name: inkdrops;
     animation-duration:  5s;
     animation-iteration-count:  1;
     animation-fill-mode:backwards ;
     animation-delay: 2s;
+}
+
+.header__img-3{
+    right: 20%;
+    top: 50%;
+    animation-name: inkdrops;
+    animation-duration:  5s;
+    animation-iteration-count:  1;
+    animation-fill-mode:backwards ;
+    animation-delay: 2s;
+}
+
+.header__img-4{
+    right: 20%;
+    top: 25%;
+    animation-name: inkdrops;
+    animation-duration:  5s;
+    animation-iteration-count:  1;
+    animation-fill-mode:backwards ;
+    animation-delay: 1s;
+}
+
+.header__img-5{
+    right: 0%;
+    top: 40%;
+    animation-name: inkdrops;
+    animation-duration:  5s;
+    animation-iteration-count:  1;
+    animation-fill-mode:backwards ;
+    animation-delay: 3s;
 }
 
 @keyframes inkdrops {

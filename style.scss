@@ -53,7 +53,7 @@ body {
     margin-right:auto;
     width: 35px;
     height: 5px; 
-    background-color: whitesmoke;
+    background-color: $color-text;
     border-radius: 10%;
      
  
@@ -91,6 +91,8 @@ body {
     justify-content: space-evenly;
     padding-left:0;
     max-width: 1200px;
+    margin-left:auto;
+    margin-right:auto;
 }
     
 }
@@ -100,6 +102,10 @@ body {
     color:$color-text;
     border-bottom: 5px solid #F0F465;
     font-weight: bold;
+    font-size:larger;
+    font-family: "Kanit", sans-serif;
+  font-weight: 300;
+  font-style: normal;
 }
 
 .menu__item {
@@ -135,7 +141,7 @@ body {
   font-weight: 500;
   font-style: normal;
   position:relative;
-  font-size: 1rem;
+  font-size: 1.1rem;
   z-index: 1000;
   @include tablet {
     font-size: 2rem;

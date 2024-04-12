@@ -1,11 +1,10 @@
 body {
   text-align: center;
-  color: whitesmoke;
-  background-color: #13293D;
+  background-color: whitesmoke;
+  color: #13293D;
 }
 
 .header {
-  background-color: #13293D;
   height: 100vh;
 }
 
@@ -84,7 +83,7 @@ body {
 
 .menu__link {
   text-decoration: none;
-  color: whitesmoke;
+  color: #13293D;
   border-bottom: 5px solid #F0F465;
   font-weight: bold;
 }
@@ -123,7 +122,7 @@ body {
   font-size: 1rem;
   z-index: 1000;
 }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 600px) {
   .header__heading {
     font-size: 2rem;
   }

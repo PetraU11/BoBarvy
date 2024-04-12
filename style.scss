@@ -4,16 +4,18 @@
 @mixin desktop { 
     @media screen and (min-width:1000px) {@content; }}
 
+$color-bc: whitesmoke;
+$color-text: #13293D;
+
 
 body {
     text-align: center;
-    color:whitesmoke;
-    background-color: #13293D;
+    background-color:$color-bc;
+    color:$color-text;
 }
 
 
 .header{
-    background-color: #13293D;
     height: 100vh;
 
 }
@@ -36,14 +38,12 @@ body {
     grid-column: 1/-1;
     grid-row: 1 /2;
     display:block;
-    
    }
 
 }
 
 .header__menu-bars{
-    margin-top: 40px;
-    
+    margin-top: 40px;   
 }
 
 
@@ -97,7 +97,7 @@ body {
 
 .menu__link{
     text-decoration: none;
-    color:whitesmoke;
+    color:$color-text;
     border-bottom: 5px solid #F0F465;
     font-weight: bold;
 }
@@ -137,7 +137,7 @@ body {
   position:relative;
   font-size: 1rem;
   z-index: 1000;
-  @include desktop {
+  @include tablet {
     font-size: 2rem;
   }
 }
